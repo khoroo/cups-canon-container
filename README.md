@@ -1,2 +1,4 @@
 # cups-canon-container
-Dockerfile for cups with UFRII drivers
+Dockerfile for CUPS with proprietary Canon UFR2 drivers  
+  
+Base image: [anujdatar/cups-docker](https://github.com/anujdatar/cups-docker)
