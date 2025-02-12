@@ -25,8 +25,4 @@ RUN wget -q $CANON_URL -O canon-driver.tar.gz && \
     cd /tmp && \
     rm -rf linux-UFRII-drv* canon-driver.tar.gz
 
-# back up cups configs in case user does not add their own
-RUN cp -rp /etc/avahi /etc/avahi-bak
-VOLUME [ "/etc/avahi" ]
-
 CMD ["/entrypoint.sh"]
