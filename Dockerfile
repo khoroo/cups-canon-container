@@ -25,4 +25,6 @@ RUN wget -q $CANON_URL -O canon-driver.tar.gz && \
     cd /tmp && \
     rm -rf linux-UFRII-drv* canon-driver.tar.gz
 
+VOLUME [ "/etc/avahi" ]
+
 CMD ["/entrypoint.sh"]
